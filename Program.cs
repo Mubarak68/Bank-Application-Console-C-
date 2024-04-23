@@ -2,7 +2,7 @@
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to the Ahmad's Banking Application ");
+        Console.WriteLine("Welcome to the CODED's Banking Application ");
         Console.WriteLine();
 
 
@@ -45,7 +45,7 @@
                     Console.WriteLine($"\nYour current balance is: {account.GetBalance()}");
                     break;
                 case 4:
-                    Console.WriteLine("\nThank you for using the Basic Banking Application. Goodbye!");
+                    Console.WriteLine("\nThank you for using CODED Bank Application. Goodbye!");
                     break;
                 default:
                     Console.WriteLine("\nInvalid choice. Please try again.");
