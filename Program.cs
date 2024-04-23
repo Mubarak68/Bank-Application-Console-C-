@@ -2,9 +2,7 @@
 {
     static void Main(string[] args)
     {
-
-        Console.WriteLine("Welcome to the CODED Banking Application ");
-
+        Console.WriteLine("Welcome to CODED Banking Application ");
         Console.WriteLine();
 
 
@@ -46,10 +44,8 @@
                 case "3":
                     Console.WriteLine($"\nYour current balance is: {account.GetBalance()}");
                     break;
-
-                case "4":
-                    Console.WriteLine("\nThank you for using CODED Banking Application. Goodbye!");
-
+                case 4:
+                    Console.WriteLine("\nThank you for using the Basic Banking Application. Goodbye!");
                     break;
                 default:
                     Console.WriteLine("\nInvalid choice. Please try again.");
