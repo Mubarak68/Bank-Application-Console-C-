@@ -5,6 +5,8 @@ class BankAccount
     private string name;
     private int accountNumber;
     private double balance;
+    private double[] transaction = new double[100];
+    private int transactionCount = 0;
 
 
     public BankAccount(string name, int accountNumber, double initialBalance)
@@ -37,5 +39,14 @@ class BankAccount
     public double GetBalance()
     {
         return balance;
+    }
+
+    public void ViewTransaction()
+    {
+        Console.WriteLine("Transaction History: ");
+        for (int i = 0; i < transactionCount; i++)
+        {
+            Console.WriteLine(transaction[i] > 0 ? $"Deposit: {transaction[i]:C}" : $"Withdrawal: {-transaction[i]:C}");
+        }
     }
 }
